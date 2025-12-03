@@ -1,0 +1,1 @@
+[![Star History Chart](https://api.star-history.com/svg?repos=rhizomatics/updates2mqtt,rhizomatics/supernotify,rhizomatics/autoarm,rhizomatics/awesome-mqtt&type=date&legend=top-left)](https://www.star-history.com/#rhizomatics/updates2mqtt&rhizomatics/supernotify&rhizomatics/autoarm&rhizomatics/awesome-mqtt&type=date&legend=top-left)
