@@ -11,6 +11,8 @@ Current usable projects, focused on Home Assistant, MQTT and self-hosting:
     notifications, camera snapshots with PTZ movements, and more
 * [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk)
     * Integrate self-hosted Docker containers into Home Assistant's Updates dialog to be notified of new images, and pull/restart the containers
+* [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk)
+    * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup
 * [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
     * Latest and greatest list of all things MQTT
 
