@@ -1,4 +1,4 @@
-mkdocs-material>=9.5
+mkdocs-material[imaging]>=9.5
 mkdocs-material-extensions
 pymdown-extensions
 mkdocs-htmlproofer-plugin
