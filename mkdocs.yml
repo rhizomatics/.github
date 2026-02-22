@@ -18,5 +18,18 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rhizomatics
+
 nav:
   - Home: index.md
+
+plugins:
+  - optimize
+  - social:
+      cards_layout_options:
+        logo: docs/assets/images/rhizomatics-dark-icon.png
+        background_image: docs/assets/images/logo-dim-social-640x320.png
+        background_color: transparent

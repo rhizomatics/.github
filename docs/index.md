@@ -9,8 +9,8 @@ hide:
   <header class="rz-header">
     <img src="assets/images/rhizomatics-light-icon.png" alt="Rhizomatics" class="rz-header-icon">
     <div class="rz-header-text">
-      <strong>Rhizomatics</strong>
-      <span>Open Source Software &middot; Home Assistant &middot; MQTT &middot; Self-Hosting</span>
+      <strong>Rhizomatics Open Source Software</strong>
+      <span>Home Assistant &middot; MQTT &middot;  Docker &middot; Self-Hosting</span>
     </div>
   </header>
 
