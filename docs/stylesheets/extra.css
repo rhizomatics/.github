@@ -1,0 +1,165 @@
+/* ── Brand colours ──────────────────────────────────────── */
+:root {
+  --md-primary-fg-color:        #0d9488;
+  --md-primary-fg-color--light: #14b8a6;
+  --md-primary-fg-color--dark:  #0f766e;
+  --md-accent-fg-color:         #fb923c;
+}
+
+/* ── Full page background ───────────────────────────────── */
+body {
+  background-image: url('../assets/images/logo-dim-social-640x320.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0a0c12;
+}
+
+.md-container,
+.md-main,
+.md-main__inner,
+.md-content,
+.md-content__inner {
+  background: transparent !important;
+}
+
+/* ── Page wrapper ───────────────────────────────────────── */
+.rz-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* ── Compact header pill ────────────────────────────────── */
+.rz-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.55rem 1rem 0.55rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(10, 12, 18, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rz-header-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.rz-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.rz-header-text strong {
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  display: block;
+}
+
+.rz-header-text span {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  letter-spacing: 0.03em;
+}
+
+/* ── Pills container ────────────────────────────────────── */
+.rz-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+/* ── Individual pill ────────────────────────────────────── */
+.rz-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0.9rem 0.45rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(10, 12, 18, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  text-decoration: none !important;
+  color: #e2e8f0 !important;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s, background 0.18s;
+}
+
+.rz-pill:hover {
+  background: rgba(10, 12, 18, 0.88);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+  text-decoration: none !important;
+}
+
+/* ── Pill icon circle ───────────────────────────────────── */
+.rz-pill-icon {
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
+/* ── Pill text ──────────────────────────────────────────── */
+.rz-pill-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.rz-pill-body strong {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  display: block;
+}
+
+.rz-pill-body span {
+  font-size: 0.76rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Arrow ──────────────────────────────────────────────── */
+.rz-pill-arrow {
+  flex-shrink: 0;
+  font-size: 1rem;
+  opacity: 0.3;
+  transition: opacity 0.18s, transform 0.18s;
+  color: #f1f5f9;
+}
+
+.rz-pill:hover .rz-pill-arrow {
+  opacity: 0.8;
+  transform: translateX(2px) translateY(-2px);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 800px) {
+  .rz-pill-body span {
+    white-space: normal;
+  }
+}
+
+/* ── Hide MkDocs page title on home ─────────────────────── */
+.md-content__inner > h1:first-child {
+  display: none;
+}

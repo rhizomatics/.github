@@ -1,0 +1,22 @@
+site_name: Rhizomatics
+site_url: https://www.rhizomatics.org.uk
+site_description: Helpful Open Source Software focused on Home Assistant, MQTT, and self-hosting
+site_author: Rhizomatics
+
+theme:
+  name: material
+  logo: assets/images/rhizomatics-light-icon.png
+  favicon: assets/images/rhizomatics-dark-icon.png
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  features:
+    - navigation.instant
+    - navigation.top
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
