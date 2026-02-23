@@ -29,7 +29,7 @@ hide:
       <span class="rz-pill-icon" style="background:#ea580c">🔔</span>
       <div class="rz-pill-body">
         <strong>Supernotify</strong>
-        <span>Multi-channel Home Assistant notifications with chimes, voice announcements, camera snapshots, PTZ movements and more</span>
+        <span>Unified notification for Home Assistant with chimes, voice announcements, camera snapshots, PTZ movements and more</span>
       </div>
       <span class="rz-pill-arrow">↗</span>
     </a>
@@ -55,7 +55,7 @@ hide:
     <a href="https://github.com/rhizomatics/ha_remote_logger" class="rz-pill" target="_blank" rel="noopener">
       <span class="rz-pill-icon" style="background:#7c3aed">🪵</span>
       <div class="rz-pill-body">
-        <strong>remote_logger</strong>
+        <strong>Remote Logger</strong>
         <span>OTEL and Syslog native remote structured logging for Home Assistant</span>
       </div>
       <span class="rz-pill-arrow">↗</span>
