@@ -20,4 +20,10 @@ Current usable projects, focused on Home Assistant, MQTT and self-hosting:
 * [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
     * Latest and greatest list of all things MQTT
 
-[![Star History Chart](https://api.star-history.com/svg?repos=rhizomatics/updates2mqtt,rhizomatics/supernotify,rhizomatics/autoarm,rhizomatics/anpr2mqtt,rhizomatics/awesome-mqtt&type=date&legend=top-left)](https://www.star-history.com/#rhizomatics/updates2mqtt&rhizomatics/supernotify&rhizomatics/autoarm&rhizomatics/anpr2mqtt&rhizomatics/awesome-mqtt&rhizomatics&type=date&legend=top-left)
+<a href="https://www.star-history.com/?repos=rhizomatics%2Fupdates2mqtt%2Crhizomatics%2Fsupernotify%2Crhizomatics%2Fautoarm%2Crhizomatics%2Fanpr2mqtt%2Crhizomatics%2Fawesome-mqtt%2Crhizomatics%2Fremote_logger&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/awesome-mqtt%2Crhizomatics/remote_logger&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/awesome-mqtt%2Crhizomatics/remote_logger&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/awesome-mqtt%2Crhizomatics/remote_logger&type=date&legend=top-left" />
+ </picture>
+</a>
