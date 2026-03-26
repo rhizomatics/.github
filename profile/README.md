@@ -17,6 +17,7 @@ Current usable projects, focused on Home Assistant, MQTT and self-hosting:
     * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup
 * [remote_logger](https://github.com/rhizomatics/remote_logger)
     * OTEL and Syslog native remote structured logging for Home Assistant
+    * Available via public [HACS](https://hacs.xyz) catalog.
 * [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
     * Latest and greatest list of all things MQTT
 
