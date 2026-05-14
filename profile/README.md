@@ -14,7 +14,7 @@ Current usable projects, focused on Home Assistant, MQTT and self-hosting:
 * [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk)
     * Integrate self-hosted Docker containers into Home Assistant's Updates dialog to be notified of new images, and pull/restart the containers
 * [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk)
-    * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup
+    * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup and Frigate subscription over MQTT
 * [remote_logger](http://remote-logger.rhizomatics.org.uk/)
     * OTEL and Syslog native remote structured logging for Home Assistant
     * Available via public [HACS](https://hacs.xyz) catalog.
