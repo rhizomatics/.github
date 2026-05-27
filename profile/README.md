@@ -1,7 +1,7 @@
 ## Rhizomatics
 ### Helpful Open Source Software
 
-Current usable projects, focused on Home Assistant, MQTT and self-hosting:
+Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
 
 * [AutoArm](https://autoarm.rhizomatics.org.uk)
     * Automatically arm and disarm Home Assistant Alarm Control Panels using calendars, mobile actions, physical buttons, sun state, occupancy and conditions
