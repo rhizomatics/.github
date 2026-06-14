@@ -32,7 +32,7 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 
 * [Boat Tech Directory](https://github.com/rhizomatics/boat-tech-directory)
   * Curated list of boat tech projects, products, standards, blogs, news and more
-  * Available as [Boat Tech Directory](http://boat-tech-directory.rhizomatics.org.uk/) web site and in `awesome list`
+  * Available as [Boat Tech Directory](http://boat-tech-directory.rhizomatics.org.uk/) web site and in `awesome list` as [Awesome Boat Tech](https://github.com/SY-Sea-Jade/awesome-boat-tech#awesome-boat-tech--)
   
 <a href="https://www.star-history.com/?repos=rhizomatics%2Fupdates2mqtt%2Crhizomatics%2Fsupernotify%2Crhizomatics%2Fautoarm%2Crhizomatics%2Fanpr2mqtt%2Crhizomatics%2Fremote_logger&type=date&legend=top-left">
  <picture>
