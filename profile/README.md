@@ -3,7 +3,7 @@
 
 Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
 
-#### Home Assistant Focused
+#### Homes and Home Assistant
 * [AutoArm](https://autoarm.rhizomatics.org.uk)
     * Automatically arm and disarm Home Assistant Alarm Control Panels using calendars, mobile actions, physical buttons, sun state, occupancy and conditions
     * Available via public [HACS](https://hacs.xyz) catalog.
@@ -22,13 +22,17 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 * [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
     * Latest and greatest list of all things MQTT
 
-#### SignalK Focused
+#### Boats and SignalK
 
 * [SignalK CLI](https://github.com/rhizomatics/signalk-cli)
   * Query SignalK History API from command line
   * Output to console, CSV or Apache Arrow Feather dataframe
   * Automatic discovery of local SignalK server
   * Auto aggregation for min/avg/max of any path value
+
+* [Boat Tech Directory](https://github.com/rhizomatics/boat-tech-directory)
+  * Curated list of boat tech projects, products, standards, blogs, news and more
+  * Available as [Boat Tech Directory](http://boat-tech-directory.rhizomatics.org.uk/) web site and in `awesome list`
   
 <a href="https://www.star-history.com/?repos=rhizomatics%2Fupdates2mqtt%2Crhizomatics%2Fsupernotify%2Crhizomatics%2Fautoarm%2Crhizomatics%2Fanpr2mqtt%2Crhizomatics%2Fremote_logger&type=date&legend=top-left">
  <picture>
