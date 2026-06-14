@@ -5,7 +5,8 @@
 
 Rhizomatics is an open source organisation publishing free, source-available tools that
 integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
-projects are hosted on GitHub at https://github.com/rhizomatics.
+projects are hosted on GitHub at https://github.com/rhizomatics. The Rhizomatics website is at
+https://www.rhizomatics.org.uk.
 
 ## Home Assistant & self-hosting
 
@@ -27,6 +28,8 @@ projects are hosted on GitHub at https://github.com/rhizomatics.
 - [signalk-cli](https://github.com/rhizomatics/signalk-cli): Command line access to SignalK APIs.
 - [signalk-datalab-plugin](https://github.com/rhizomatics/signalk-datalab-plugin): Interactive
   data analysis notebooks for SignalK, running as WebAssembly in the browser.
-- [Awesome Boat Tech](https://github.com/SY-Sea-Jade/awesome-boat-tech): A curated list of boat
-  tech covering NMEA and Seatalk, marine internet, open source projects, hardware vendors and
-  educational resources.
+- [Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk): A curated directory of
+  boat tech covering NMEA and Seatalk, marine internet, open source projects, hardware vendors
+  and educational resources.
+- [Awesome Boat Tech](https://github.com/SY-Sea-Jade/awesome-boat-tech): The same curated list of
+  boat tech, in 'awesome list' format.

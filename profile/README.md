@@ -1,6 +1,8 @@
 ## Rhizomatics
 ### Helpful Open Source Software
 
+Website: [rhizomatics.org.uk](https://www.rhizomatics.org.uk)
+
 Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
 
 #### Homes and Home Assistant

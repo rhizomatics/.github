@@ -1,5 +1,5 @@
 ---
-title: Rhizomatics
+title: Open Source Home Assistant, MQTT & SignalK Tools
 description: Open source software for Home Assistant, MQTT, SignalK, Docker self-hosting, home and boat automation.
 hide:
   - navigation

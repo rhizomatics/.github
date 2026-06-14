@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% set title = page.meta.title if page.meta and page.meta.title else (page.title | striptags if page.title else config.site_name) %}
+  {% set description = page.meta.description if page.meta and page.meta.description else config.site_description %}
+  {% set image = config.site_url ~ '/assets/images/icon-master-1280x1280.png' %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="{{ image }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ image }}">
+
+  <!-- debug is_homepage={{ page.is_homepage }} url={{ page.url }} -->
+  {% if page.is_homepage %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rhizomatics",
+      "url": "{{ config.site_url }}",
+      "logo": "{{ image }}",
+      "description": "{{ config.site_description }}",
+      "sameAs": [
+        "https://github.com/rhizomatics"
+      ]
+    }
+    </script>
+  {% endif %}
+{% endblock %}
