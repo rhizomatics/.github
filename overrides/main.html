@@ -17,8 +17,7 @@
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:image" content="{{ image }}">
 
-  <!-- debug is_homepage={{ page.is_homepage }} url={{ page.url }} -->
-  {% if page.is_homepage %}
+  {% if page.url == "" %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
