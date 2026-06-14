@@ -3,6 +3,8 @@ site_name = "Rhizomatics"
 site_description = "Open source software for Home Assistant, MQTT, Docker self-hosting and marine SignalK integrations."
 site_author = "Rhizomatics"
 site_url = "https://www.rhizomatics.org.uk"
+repo_url = "https://github.com/rhizomatics"
+repo_name = "rhizomatics/.github"
 
 copyright = "Copyright &copy; 2026 Rhizomatics"
 
