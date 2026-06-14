@@ -1,8 +1,9 @@
 ## Rhizomatics
 ### Helpful Open Source Software
 
-Current usable projects, focused on Home Assistant, MQTT and self-hosting:
+Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
 
+#### Home Assistant Focused
 * [AutoArm](https://autoarm.rhizomatics.org.uk)
     * Automatically arm and disarm Home Assistant Alarm Control Panels using calendars, mobile actions, physical buttons, sun state, occupancy and conditions
     * Available via public [HACS](https://hacs.xyz) catalog.
@@ -14,10 +15,25 @@ Current usable projects, focused on Home Assistant, MQTT and self-hosting:
 * [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk)
     * Integrate self-hosted Docker containers into Home Assistant's Updates dialog to be notified of new images, and pull/restart the containers
 * [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk)
-    * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup
-* [remote_logger](https://github.com/rhizomatics/remote_logger)
+    * Watch for images added to a file server, analyze and create Home Assistant Image and Sensor entities for content, with optional UK DVLA lookup and Frigate subscription over MQTT
+* [remote_logger](http://remote-logger.rhizomatics.org.uk/)
     * OTEL and Syslog native remote structured logging for Home Assistant
+    * Available via public [HACS](https://hacs.xyz) catalog.
 * [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
     * Latest and greatest list of all things MQTT
 
-[![Star History Chart](https://api.star-history.com/svg?repos=rhizomatics/updates2mqtt,rhizomatics/supernotify,rhizomatics/autoarm,rhizomatics/anpr2mqtt,rhizomatics/awesome-mqtt&type=date&legend=top-left)](https://www.star-history.com/#rhizomatics/updates2mqtt&rhizomatics/supernotify&rhizomatics/autoarm&rhizomatics/anpr2mqtt&rhizomatics/awesome-mqtt&type=date&legend=top-left)
+#### SignalK Focused
+
+* [SignalK CLI](https://github.com/rhizomatics/signalk-cli)
+  * Query SignalK History API from command line
+  * Output to console, CSV or Apache Arrow Feather dataframe
+  * Automatic discovery of local SignalK server
+  * Auto aggregation for min/avg/max of any path value
+  
+<a href="https://www.star-history.com/?repos=rhizomatics%2Fupdates2mqtt%2Crhizomatics%2Fsupernotify%2Crhizomatics%2Fautoarm%2Crhizomatics%2Fanpr2mqtt%2Crhizomatics%2Fremote_logger&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/remote_logger&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/remote_logger&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=rhizomatics/updates2mqtt%2Crhizomatics/supernotify%2Crhizomatics/autoarm%2Crhizomatics/anpr2mqtt%2Crhizomatics/remote_logger&type=date&legend=top-left" />
+ </picture>
+</a>
