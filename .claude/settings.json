@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/jey/Code/rhizomatics_home/.venv/bin/python3 -m pip install zensical)",
+      "Bash(/Users/jey/Code/rhizomatics_home/.venv/bin/python3 -m ensurepip)",
+      "Bash(gh search *)",
+      "Bash(/Users/jey/Code/rhizomatics_home/.venv/bin/zensical --help)",
+      "Bash(/Users/jey/Code/rhizomatics_home/.venv/bin/zensical init *)"
+    ]
+  }
+}

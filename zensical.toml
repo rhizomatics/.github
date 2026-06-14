@@ -1,0 +1,48 @@
+[project]
+site_name = "Rhizomatics"
+site_description = "Open source software for Home Assistant, MQTT, Docker self-hosting and marine SignalK integrations."
+site_author = "Rhizomatics"
+site_url = "https://www.rhizomatics.org.uk"
+
+copyright = "Copyright &copy; 2026 Rhizomatics"
+
+nav = [
+  { "Home" = "index.md" },
+  { "Home Automation" = "home-automation.md" },
+  { "Sailing" = "sailing.md" },
+]
+
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+logo = "assets/images/rhizomatics-logo.png"
+favicon = "assets/images/rhizomatics-dark-icon.png"
+language = "en"
+
+features = [
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.tracking",
+  "navigation.top",
+  "navigation.footer",
+  "content.code.copy",
+  "search.highlight",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to light mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/rhizomatics"

@@ -1,0 +1,32 @@
+# Rhizomatics
+
+> Open source software for Home Assistant, MQTT, Docker self-hosting, and marine SignalK
+> integrations.
+
+Rhizomatics is an open source organisation publishing free, source-available tools that
+integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
+projects are hosted on GitHub at https://github.com/rhizomatics.
+
+## Home Assistant & self-hosting
+
+- [AutoArm](https://autoarm.rhizomatics.org.uk): Automatically arm Home Assistant alarm panels
+  using calendars, presence, mobile actions, sun state and conditions.
+- [Supernotify](https://supernotify.rhizomatics.org.uk): Unified notification for Home Assistant,
+  with chimes, voice announcements, camera snapshots and PTZ camera movements.
+- [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk): Use Home Assistant's Updates dialog for
+  self-hosted Docker container updates, with one-click pull and restart.
+- [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk): Integrate ANPR/ALPR cameras via the file
+  system, creating Home Assistant entities for plate reads, with optional UK DVLA lookup.
+- [Remote Logger](https://github.com/rhizomatics/remote_logger): OTEL and syslog native remote
+  structured logging for Home Assistant.
+- [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt): A curated list of MQTT brokers,
+  clients, tools and resources.
+
+## Sailing & SignalK
+
+- [signalk-cli](https://github.com/rhizomatics/signalk-cli): Command line access to SignalK APIs.
+- [signalk-datalab-plugin](https://github.com/rhizomatics/signalk-datalab-plugin): Interactive
+  data analysis notebooks for SignalK, running as WebAssembly in the browser.
+- [Awesome Boat Tech](https://github.com/SY-Sea-Jade/awesome-boat-tech): A curated list of boat
+  tech covering NMEA and Seatalk, marine internet, open source projects, hardware vendors and
+  educational resources.
