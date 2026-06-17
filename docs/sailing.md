@@ -1,12 +1,27 @@
 ---
 title: Sailing
 description: Open source SignalK tools and a curated directory of boat technology, for sailors and liveaboards.
+tags:
+  - nmea
+  - signalk
+  - boating
+  - marine
+  - sailing
+  - yacht
+  - marimo
+  - notebook
+  - awesome-list
+  - nmea0183
+  - nmea2000
+  - nmea2k
+  - seatalk
+  - open_source
+
 ---
 
 # Sailing
 
-Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the open marine
-data standard, intended for low power servers on small boats, alongside a curated directory of boat technology.
+Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the open marine data standard, intended for low power servers on small boats, alongside a curated directory of boat technology.
 
 ## Projects
 
@@ -16,13 +31,13 @@ data standard, intended for low power servers on small boats, alongside a curate
 
     ---
 
-    Command line access to SignalK APIs.
+    Command line access to SignalK APIs. Generate CSV or Apache Arrow dataframes from the History API, or use the exploration and analysis tools to investigate the preserved boat data.
 
 -   :material-notebook-outline: **[signalk-datalab-plugin](https://github.com/rhizomatics/signalk-datalab-plugin)**
 
     ---
 
-    Interactive data analysis notebooks for SignalK, running as WebAssembly in the browser.
+    Interactive data analysis notebooks for SignalK, using [Marimo](https://marimo.io) running as WebAssembly in the browser.
 
 -   :material-compass-outline: **[Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk/)**
 
