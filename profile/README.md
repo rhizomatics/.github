@@ -40,7 +40,7 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
   * Python data notebooks using Marimo and WASM for easy (and advanced ) data analysis on SignalK data
   * Example notebook that pulls aggregate data out of the SignalK History API
  
-* [signalk-einklabel-plugin](https://github.com/rhizomatics/signalk-einklabel-plugin)
+* [signalk-einklabel-plugin](https://github.com/rhizomatics/signalk-einklabel-plugin) *BETA*
   * Publish SignalK data to cheap eInk electronic shelf labels over BLE
   * Simple SVG templating, access to data paths plus Resources API
   * Scheduled based on time or change to a SignalK path
