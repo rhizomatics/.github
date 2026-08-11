@@ -40,11 +40,23 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
   * Python data notebooks using Marimo and WASM for easy (and advanced ) data analysis on SignalK data
   * Example notebook that pulls aggregate data out of the SignalK History API
  
-* [signalk-einklabel-plugin](https://github.com/rhizomatics/signalk-einklabel-plugin) *BETA*
+* [signalk-bluetti-plugin](https://github.com/rhizomatics/signalk-bluetti-plugin)
+  * Read Bluetti power station sensor data for battery level, solar input, inverter etc
+  * Configuration for dozens of models
+  * Some newer models using encrypted data will need a vendor-supplied key
+ 
+* [signalk-delta-squelch-plugin](https://github.com/rhizomatics/signalk-delta-squelch-plugin)
+  * Minimize noisy SignalK deltas and unnecessary database space/query time for analytics
+  * Apply configurable rounding factor where SignalK precision exceeds the device resolution, e.g. GPS position
+  * Skip updates within a configurable tolerance from last value, with heartbeat to maintain minimal stream
+  * Reject implausible position changes from GPS spikes
+ 
+* [signalk-einklabel-plugin](https://github.com/rhizomatics/signalk-einklabel-plugin)
   * Publish SignalK data to cheap eInk electronic shelf labels over BLE
   * Simple SVG templating, access to data paths plus Resources API
   * Scheduled based on time or change to a SignalK path
-  * Handles ZhunyCo BLE labels and extensible for other vendors 
+  * Handles ZhunyCo BLE labels and extensible for other vendors
+  * Also available [signalk-einklabel-genai-plugin](https://github.com/rhizomatics/signalk-einklabel-genai-plugin) to generate ESL labels from a configurable LLM prompt
   
 <a href="https://www.star-history.com/?repos=rhizomatics%2Fupdates2mqtt%2Crhizomatics%2Fsupernotify%2Crhizomatics%2Fautoarm%2Crhizomatics%2Fanpr2mqtt%2Crhizomatics%2Fremote_logger&type=date&legend=top-left">
  <picture>
