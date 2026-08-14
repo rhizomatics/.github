@@ -28,6 +28,8 @@ tags:
 
 # Sailing
 
+[![boat tech directory](https://boat-tech-directory.rhizomatics.org.uk/images/badge.svg)](https://boat-tech-directory.rhizomatics.org.uk)
+
 Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the open marine data standard, intended for low power servers on small boats, alongside a curated directory of boat technology.
 
 ## Projects
