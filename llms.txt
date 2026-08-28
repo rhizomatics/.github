@@ -33,3 +33,16 @@ https://www.rhizomatics.org.uk.
   and educational resources.
 - [Awesome Boat Tech](https://github.com/SY-Sea-Jade/awesome-boat-tech): The same curated list of
   boat tech, in 'awesome list' format.
+- [signalk-bluetti-plugin](https://github.com/rhizomatics/signalk-bluetti-plugin): Reads Bluetti
+  power station sensor data for battery level, solar input, inverter and more, with configuration
+  for dozens of models.
+- [signalk-delta-squelch-plugin](https://github.com/rhizomatics/signalk-delta-squelch-plugin):
+  Minimizes noisy SignalK deltas and unnecessary database space/query time for analytics.
+- [signalk-einklabel-plugin](https://rhizomatics.github.io/signalk-einklabel-plugin/): Publishes
+  SignalK data to cheap eInk electronic shelf labels over BLE, with simple SVG templating and
+  scheduling. Also available as
+  [signalk-einklabel-genai-plugin](https://github.com/rhizomatics/signalk-einklabel-genai-plugin)
+  to generate ESL labels from a configurable LLM prompt.
+- [signalk-teltonika-sms-plugin](https://github.com/rhizomatics/signalk-teltonika-sms-plugin):
+  Notifications API implementation for text messaging, sending SMS via the Web API on Teltonika
+  RutOS modems/routers.
