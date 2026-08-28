@@ -68,7 +68,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     Minimizes noisy SignalK deltas and unnecessary database space/query time for analytics. Applies configurable rounding, skips updates within a tolerance of the last value (with a heartbeat to keep the stream alive), and rejects implausible position changes from GPS spikes.
 
--   :material-tag-outline: **[signalk-einklabel-plugin](https://rhizomatics.github.io/signalk-einklabel-plugin/)**
+-   :material-tag-outline: **[signalk-einklabel-plugin](https://signalk-einklabel.rhizomatics.org.uk)**
 
     ---
 
