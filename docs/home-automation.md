@@ -51,4 +51,10 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     A curated list of MQTT brokers, clients, tools and resources.
 
+-   :material-chart-box: **[HACS Dashboard](https://rhizomatics.github.io/hacs-downloads/)**
+
+    ---
+
+    Download metrics and analytics for our HACS-listed Home Assistant integrations.
+
 </div>
