@@ -39,7 +39,7 @@ the wider Home Assistant, Python and Docker ecosystems.
     Integrate ANPR/ALPR cameras via the file system, creating Home Assistant entities for plate
     reads, with optional UK DVLA lookup.
 
--   :material-text-box-multiple-outline: **[Remote Logger](https://github.com/rhizomatics/remote_logger)**
+-   :material-text-box-multiple-outline: **[Remote Logger](http://remote-logger.rhizomatics.org.uk)**
 
     ---
 
