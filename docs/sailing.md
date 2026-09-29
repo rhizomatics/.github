@@ -82,4 +82,10 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     Notifications API implementation for text messaging. Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS), with throttling and retry.
 
+-   :material-chart-box: **[NPM Dashboard](https://www.packfolio.dev/?q=%40rhizomatics)**
+
+    ---
+
+    Download metrics and analytics for our npm-listed SignalK integrations.
+
 </div>
