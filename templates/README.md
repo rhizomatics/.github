@@ -9,8 +9,11 @@ Shared GitHub admin automation for rhizomatics repos.
 | `admin-dependency-review.yml` | `reusable-dependency-review.yml` | Flags known-vulnerable dependencies on PRs, commenting only when it fails |
 | `admin-dependabot-automerge.yml` | `reusable-dependabot-automerge.yml` | Squash-merges Dependabot PRs touching only trusted deps (`TRUSTED` regex: astral's uv, ruff, ty, `astral-sh/*` actions) once every other check passes |
 
-Callers reference the reusable workflows at `@main`, so changing a reusable workflow or
-`labels.yml` here takes effect everywhere on the next run.
+Callers pin the reusable workflows to a release tag's commit SHA (`@<sha> # 1.0.0`), so a
+change to a reusable workflow reaches a repo only when its pin moves. To release one, tag this
+repo (immutable release), update the pins in `templates/workflows/`, and run `sync-admin.sh`;
+Dependabot also proposes the bump in each repo. `labels.yml` is still read from `main` at run
+time, so label changes take effect everywhere on the next run.
 
 ## Adding or updating repos
 

@@ -11,7 +11,7 @@ the wider Home Assistant, Python and Docker ecosystems.
 
 <div class="grid cards" markdown>
 
--   :material-shield-home: **[AutoArm](https://autoarm.rhizomatics.org.uk)**
+-   :material-shield-home: **[Auto Arm](https://autoarm.rhizomatics.org.uk)**
 
     ---
 
@@ -45,11 +45,11 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     OTEL and syslog native remote structured logging for Home Assistant.
 
--   :material-access-point: **[Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt)**
+-   :material-access-point: **[Dev Shell](https://dev-shell.rhizomatics.org.uk)**
 
     ---
 
-    A curated list of MQTT brokers, clients, tools and resources.
+    Python REPL for Home Assistant custom component development and data tinkering.
 
 -   :material-chart-box: **[HACS Dashboard](https://rhizomatics.github.io/hacs-downloads/)**
 
