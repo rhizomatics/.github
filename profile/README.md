@@ -6,7 +6,7 @@ Website: [rhizomatics.org.uk](https://www.rhizomatics.org.uk)
 Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
 
 #### Homes and Home Assistant
-* [AutoArm](https://autoarm.rhizomatics.org.uk)
+* [Auto Arm](https://autoarm.rhizomatics.org.uk)
     * Automatically arm and disarm Home Assistant Alarm Control Panels using calendars, mobile actions, physical buttons, sun state, occupancy and conditions
     * Available via public [HACS](https://hacs.xyz) catalog.
 * [Supernotify](https://supernotify.rhizomatics.org.uk)
@@ -21,9 +21,9 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 * [remote_logger](http://remote-logger.rhizomatics.org.uk/)
     * OTEL and Syslog native remote structured logging for Home Assistant
     * Available via public [HACS](https://hacs.xyz) catalog.
-* [Awesome MQTT](https://github.com/rhizomatics/awesome-mqtt/tree/main)
-    * Latest and greatest list of all things MQTT
-
+* [Dev Shell](https:/dev_shell.rhizomatics.org.uk)
+    * Python REPL for Home Assistant, access entities directly as Python objects, with otptional server component for direct access to live Python objects
+      
 #### Boats and SignalK
 
 * [SignalK CLI](https://github.com/rhizomatics/signalk-cli)
