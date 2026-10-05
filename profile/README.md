@@ -21,8 +21,8 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 * [remote_logger](https://remote-logger.rhizomatics.org.uk/)
     * OTEL and Syslog native remote structured logging for Home Assistant
     * Available via public [HACS](https://hacs.xyz) catalog.
-* [Dev Shell](https:/dev_shell.rhizomatics.org.uk)
-    * Python REPL for Home Assistant, access entities directly as Python objects, with otpional server component for direct access to live Python objects
+* [Home Assistant REPL](https://homeassistant-repl.rhizomatics.org.uk)
+    * Python REPL based developer shell for Home Assistant, access entities directly as Python objects, with otpional server component for direct access to live Python objects
       
 #### Boats and SignalK
 
