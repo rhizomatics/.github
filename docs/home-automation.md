@@ -45,11 +45,11 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     OTEL and syslog native remote structured logging for Home Assistant.
 
--   :material-access-point: **[Dev Shell](https://dev-shell.rhizomatics.org.uk)**
+-   :material-access-point: **[Home Assistant REPL]([https://dev-shell.rhizomatics.org.uk](https://homeassistant-repl.rhizomatics.org.uk))**
 
     ---
 
-    Python REPL for Home Assistant custom component development and data tinkering.
+    Python REPL based developer shell for Home Assistant custom component development and data tinkering.
 
 -   :material-chart-box: **[HACS Dashboard](https://rhizomatics.github.io/hacs-downloads/)**
 
