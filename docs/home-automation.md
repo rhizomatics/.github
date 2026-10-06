@@ -45,7 +45,7 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     OTEL and syslog native remote structured logging for Home Assistant.
 
--   :material-access-point: **[Home Assistant REPL]([https://homeassistant-repl.rhizomatics.org.uk](https://homeassistant-repl.rhizomatics.org.uk))**
+-   :material-access-point: **[Home Assistant REPL]([https://homeassistant-repl.rhizomatics.org.uk](https://homeassistant-repl.rhizomatics.org.uk)**
 
     ---
 
