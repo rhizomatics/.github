@@ -3,7 +3,7 @@
 
 Website: [rhizomatics.org.uk](https://www.rhizomatics.org.uk)
 
-Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting:
+Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosting. Additional agent support for some available at [Rhizomatics Agent Plugins](https://github.com/rhizomatics/agent-plugins).
 
 #### Homes and Home Assistant
 * [Auto Arm](https://autoarm.rhizomatics.org.uk)
