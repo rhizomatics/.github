@@ -42,7 +42,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     Command line access to SignalK APIs. Generate CSV or Apache Arrow dataframes from the History API, or use the exploration and analysis tools to investigate the preserved boat data.
 
--   :material-notebook-outline: **[signalk-datalab-plugin](https://github.com/rhizomatics/signalk-datalab-plugin)** *ALPHA*
+-   :material-notebook-outline: **[signalk-datalab-plugin](https://signalk-datalab.rhizomatics.org.uk)** *BETA*
 
     ---
 
