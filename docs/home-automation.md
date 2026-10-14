@@ -51,7 +51,7 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
 
--   :material-local-laundry-service: **[Appliances AutoNotify](https://appliances-autonotify.rhizomatics.org.uk)**
+-   :material-washing-machine: **[Appliances AutoNotify](https://appliances-autonotify.rhizomatics.org.uk)**
 
     ---
 
