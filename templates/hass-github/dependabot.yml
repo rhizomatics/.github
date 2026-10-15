@@ -27,11 +27,15 @@ updates:
       cronjob: "0 6 1,15 * *"
     cooldown:
       default-days: 7
+    # Minimum versions in pyproject.toml are our support window (6 months of Home Assistant), not
+    # Dependabot's to raise: update uv.lock, and only touch pyproject.toml if a release falls
+    # outside the declared range.
+    versioning-strategy: increase-if-necessary
     # Transitive deps (zeroconf, aiohttp, ...) are pinned by homeassistant and
     # differ per Python fork in uv.lock; Dependabot can't bump them per fork.
     allow:
       - dependency-type: direct
-        # Inherited from Home Assistant / its test harness: follow the platform, don't bump.
+    # Inherited from Home Assistant / its test harness: follow the platform, don't bump.
     ignore:
       - dependency-name: homeassistant
       - dependency-name: pytest-homeassistant-custom-component
