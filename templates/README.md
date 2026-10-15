@@ -33,5 +33,9 @@ Then commit in each repo.
 - **astral** group (uv, ruff, ty, `astral-sh/*` actions) in Python and Actions ecosystems, so trusted
   updates arrive in their own PR and can be auto-merged. Keep it in step with `TRUSTED`.
 - **Security updates** are raised as soon as an alert opens, grouped into one PR per ecosystem.
+- **Minimum versions stay put**: pip, uv and npm entries set `versioning-strategy:
+  increase-if-necessary`, so Dependabot updates the lock file and only raises a lower bound when
+  a new release falls outside the declared range. Floors are a support decision: 6 months of Home
+  Assistant for integrations, Python 3.13-3.15 for PyPI packages.
 - The Home Assistant integrations only update direct pip deps, since their transitive deps are
   pinned by homeassistant. The same `allow` rule keeps security PRs to direct deps too.
