@@ -49,3 +49,19 @@ toggle.name = "Switch to light mode"
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
 link = "https://github.com/rhizomatics"
+
+# Generates llms.txt (and Markdown copies of each page) from the pages below.
+[project.plugins.llmstxt]
+full_output = "llms-full.txt"
+markdown_description = """
+Rhizomatics is an open source organisation publishing free, source-available tools that
+integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
+projects are hosted on GitHub at https://github.com/rhizomatics.
+"""
+
+[project.plugins.llmstxt.sections]
+"Overview" = [{ "index.md" = "Introduction to Rhizomatics and its projects" }]
+"Projects" = [
+  { "home-automation.md" = "Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger" },
+  { "sailing.md" = "SignalK plugins and tools, and the Boat Tech Directory of marine hardware, software and resources" },
+]
