@@ -1,0 +1,122 @@
+# Rhizomatics
+
+> Open source software for Home Assistant, MQTT, Docker self-hosting and marine SignalK integrations.
+
+Rhizomatics is an open source organisation publishing free, source-available tools that
+integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
+projects are hosted on GitHub at https://github.com/rhizomatics.
+
+# Overview
+
+# Rhizomatics
+
+Open source software for automating homes and boats, focusing on Home Assistant, MQTT and SignalK.
+
+- **[Home Automation](<https://www.rhizomatics.org.uk/home-automation/index.md>)**
+
+  ---
+
+  Open source tools for Home Assistant, MQTT and Docker self-hosting.
+- **[Sailing](<https://www.rhizomatics.org.uk/sailing/index.md>)**
+
+  ---
+
+  Open source tools for SignalK, and a curated directory of boat technology.
+
+# Projects
+
+# Home Automation
+
+Open source tools for [Home Assistant](<https://www.home-assistant.io/>), MQTT, and self-hosted automation. Everything here is free, source-available on GitHub, and designed to work well with the wider Home Assistant, Python and Docker ecosystems.
+
+- **[Auto Arm](<https://autoarm.rhizomatics.org.uk>)**
+
+  ---
+
+  Automatically arm Home Assistant alarm panels using calendars, presence, mobile actions, sun state and conditions.
+- **[Supernotify](<https://supernotify.rhizomatics.org.uk>)**
+
+  ---
+
+  Unified notification for Home Assistant, with chimes, voice announcements, camera snapshots, PTZ camera movements and more.
+- **[Updates2MQTT](<https://updates2mqtt.rhizomatics.org.uk>)**
+
+  ---
+
+  Use Home Assistant's Updates dialog for self-hosted Docker container updates, with one-click pull and restart.
+- **[anpr2mqtt](<https://anpr2mqtt.rhizomatics.org.uk>)**
+
+  ---
+
+  Integrate ANPR/ALPR cameras via the file system, creating Home Assistant entities for plate reads, with optional UK DVLA lookup.
+- **[Remote Logger](<http://remote-logger.rhizomatics.org.uk>)**
+
+  ---
+
+  OTEL and syslog native remote structured logging for Home Assistant.
+- **[Home Assistant REPL](<https://homeassistant-repl.rhizomatics.org.uk>)**
+
+  ---
+
+  Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+- **[Appliance AutoNotify](<https://appliance-autonotify.rhizomatics.org.uk>)**
+
+  ---
+
+  Python REPL based developer shell for Home Assistant custom component development and data tinkering.
+- **[HACS Dashboard](<https://rhizomatics.github.io/hacs-downloads/>)**
+
+  ---
+
+  Download metrics and analytics for our HACS-listed Home Assistant integrations.
+
+# Sailing
+
+Rhizomatics builds open source tools for [SignalK](<https://signalk.org/>), the open marine data standard, intended for low power servers on small boats, alongside a curated directory of boat technology.
+
+## Projects
+
+- **[signalk-cli](<https://github.com/rhizomatics/signalk-cli>)**
+
+  ---
+
+  Command line access to SignalK APIs. Generate CSV or Apache Arrow dataframes from the History API, or use the exploration and analysis tools to investigate the preserved boat data.
+- **[signalk-datalab-plugin](<https://signalk-datalab.rhizomatics.org.uk>)** *BETA*
+
+  ---
+
+  Interactive data analysis notebooks for SignalK, using [Marimo](<https://marimo.io>) running as WebAssembly in the browser.
+- **[Boat Tech Directory](<https://boat-tech-directory.rhizomatics.org.uk/>)**
+
+  ---
+
+  A curated list of boat tech: NMEA and Seatalk, marine internet, open source projects, hardware vendors and educational resources.
+
+  Also available as in 'awesome list' format as [awesome-boat-tech](<https://github.com/SY-Sea-Jade/awesome-boat-tech>)) and as a webapp plugin for SignalK
+- **[signalk-bluetti-plugin](<https://github.com/rhizomatics/signalk-bluetti-plugin>)**
+
+  ---
+
+  Reads Bluetti power station sensor data for battery level, solar input, inverter and more, with configuration for dozens of models. Some newer models using encrypted data will need a vendor-supplied key.
+- **[signalk-delta-squelch-plugin](<https://github.com/rhizomatics/signalk-delta-squelch-plugin>)**
+
+  ---
+
+  Minimizes noisy SignalK deltas and unnecessary database space/query time for analytics. Applies configurable rounding, skips updates within a tolerance of the last value (with a heartbeat to keep the stream alive), and rejects implausible position changes from GPS spikes.
+- **[signalk-einklabel-plugin](<https://signalk-einklabel.rhizomatics.org.uk>)**
+
+  ---
+
+  Publishes SignalK data to cheap eInk electronic shelf labels over BLE, with simple SVG templating, access to data paths plus the Resources API, and scheduling based on time or change to a SignalK path. Handles ZhunyCo BLE labels and is extensible for other vendors.
+
+  Also available as [signalk-einklabel-genai-plugin](<https://github.com/rhizomatics/signalk-einklabel-genai-plugin>) to generate ESL labels from a configurable LLM prompt.
+- **[signalk-teltonika-sms-plugin](<https://github.com/rhizomatics/signalk-teltonika-sms-plugin>)**
+
+  ---
+
+  Notifications API implementation for text messaging. Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS), with throttling and retry.
+- **[NPM Dashboard](<https://www.packfolio.dev/?q=%40rhizomatics>)**
+
+  ---
+
+  Download metrics and analytics for our npm-listed SignalK integrations.
