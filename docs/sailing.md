@@ -36,7 +36,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
 <div class="grid cards" markdown>
 
--   :material-console: **[signalk-cli](https://github.com/rhizomatics/signalk-cli)**
+-   :material-console: **[signalk-cli](https://signalk-cli.rhizomatics.org.uk)**
 
     ---
 
@@ -46,7 +46,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     ---
 
-    Interactive data analysis notebooks for SignalK, using [Marimo](https://marimo.io) running as WebAssembly in the browser.
+    Interactive data analysis notebooks for SignalK, using [Marimo](https://marimo.io) running as WebAssembly in the browser. API and streaming access using a choice of Polars, Ibis Framework and signalk-cli.
 
 -   :material-compass-outline: **[Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk/)**
 
