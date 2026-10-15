@@ -2,7 +2,7 @@
 
 > Open source software for Home Assistant, MQTT, Docker self-hosting and marine SignalK integrations.
 
-Rhizomatics is an open source organisation publishing free, source-available tools that
+Rhizomatics is an open source organization publishing free, source-available tools that
 integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
 projects are hosted on GitHub at https://github.com/rhizomatics.
 
@@ -22,6 +22,11 @@ Open source software for automating homes and boats, focusing on Home Assistant,
   ---
 
   Open source tools for SignalK, and a curated directory of boat technology.
+- **[Organization](<https://www.rhizomatics.org.uk/organization/index.md>)**
+
+  ---
+
+  How we run our projects, and download statistics for our integrations.
 
 # Projects
 
@@ -58,17 +63,12 @@ Open source tools for [Home Assistant](<https://www.home-assistant.io/>), MQTT, 
 
   ---
 
-  Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+  Python REPL based developer shell for Home Assistant custom component development and data tinkering.
 - **[Appliance AutoNotify](<https://appliance-autonotify.rhizomatics.org.uk>)**
 
   ---
 
-  Python REPL based developer shell for Home Assistant custom component development and data tinkering.
-- **[HACS Dashboard](<https://rhizomatics.github.io/hacs-downloads/>)**
-
-  ---
-
-  Download metrics and analytics for our HACS-listed Home Assistant integrations.
+  Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
 
 # Sailing
 
@@ -115,6 +115,23 @@ Rhizomatics builds open source tools for [SignalK](<https://signalk.org/>), the 
   ---
 
   Notifications API implementation for text messaging. Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS), with throttling and retry.
+
+# Organization
+
+# Organization
+
+How Rhizomatics runs its open source projects, and how widely they are used.
+
+- **[Rhizomatics HQ](<https://github.com/rhizomatics/hq>)**
+
+  ---
+
+  Headquarters for the Rhizomatics open source projects: processes, agent skills, policies and standards.
+- **[HACS Dashboard](<https://rhizomatics.github.io/hacs-downloads/>)**
+
+  ---
+
+  Download metrics and analytics for our HACS-listed Home Assistant integrations.
 - **[NPM Dashboard](<https://www.packfolio.dev/?q=%40rhizomatics>)**
 
   ---

@@ -31,14 +31,9 @@ Open source tools for [Home Assistant](<https://www.home-assistant.io/>), MQTT, 
 
   ---
 
-  Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+  Python REPL based developer shell for Home Assistant custom component development and data tinkering.
 - **[Appliance AutoNotify](<https://appliance-autonotify.rhizomatics.org.uk>)**
 
   ---
 
-  Python REPL based developer shell for Home Assistant custom component development and data tinkering.
-- **[HACS Dashboard](<https://rhizomatics.github.io/hacs-downloads/>)**
-
-  ---
-
-  Download metrics and analytics for our HACS-listed Home Assistant integrations.
+  Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
