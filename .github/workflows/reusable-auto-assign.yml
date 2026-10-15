@@ -1,4 +1,5 @@
-# Reusable: assign new issues and PRs to a maintainer.
+# Reusable: assign new issues and PRs to a maintainer. Bot PRs (Dependabot, pre-commit.ci) are not
+# assigned, so they don't notify the maintainer; the hq Dependabot sweep handles them.
 #
 # Callers must trigger on `issues` and `pull_request_target` (not `pull_request`: PRs from forks
 # get a read-only GITHUB_TOKEN under pull_request whatever `permissions` says, so assigning fails
@@ -30,7 +31,7 @@ jobs:
           ASSIGNEE: ${{ inputs.assignee }}
 
       - name: Assign pull request
-        if: github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request_target' && github.event.pull_request.user.type != 'Bot'
         run: gh pr edit "$NUMBER" --add-assignee "$ASSIGNEE"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

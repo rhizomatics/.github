@@ -1,5 +1,6 @@
 # Reusable: squash-merge Dependabot PRs that only touch trusted dependencies, once every other
-# check on the PR has passed. Callers trigger on `pull_request`.
+# check on the PR has passed. Never merges a major version bump, or a minor bump of a 0.x version.
+# Callers trigger on `pull_request`.
 #
 # Waits on checks itself rather than using GitHub auto-merge, because most repos have no required
 # status checks and auto-merge would then merge before CI finishes.
@@ -32,7 +33,16 @@ jobs:
         id: trusted
         env:
           DEPS: ${{ steps.metadata.outputs.dependency-names }}
+          UPDATE_TYPE: ${{ steps.metadata.outputs.update-type }}
+          PREVIOUS: ${{ steps.metadata.outputs.previous-version }}
         run: |
+          # Semver: a major bump, or a minor bump while still on 0.x, may break things.
+          if [[ $UPDATE_TYPE == version-update:semver-major ]] ||
+            [[ $UPDATE_TYPE == version-update:semver-minor && $PREVIOUS =~ ^v?0\. ]]; then
+            echo "::notice::Not auto-merging: $UPDATE_TYPE from $PREVIOUS"
+            echo "ok=false" >>"$GITHUB_OUTPUT"
+            exit 0
+          fi
           IFS=',' read -ra deps <<<"$DEPS"
           for dep in "${deps[@]}"; do
             dep=$(xargs <<<"$dep")
