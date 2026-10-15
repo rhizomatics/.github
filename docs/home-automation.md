@@ -49,18 +49,12 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     ---
 
-    Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+    Python REPL based developer shell for Home Assistant custom component development and data tinkering.
 
 -   :material-washing-machine: **[Appliance AutoNotify](https://appliance-autonotify.rhizomatics.org.uk)**
 
     ---
 
-    Python REPL based developer shell for Home Assistant custom component development and data tinkering.
-
--   :material-chart-box: **[HACS Dashboard](https://rhizomatics.github.io/hacs-downloads/)**
-
-    ---
-
-    Download metrics and analytics for our HACS-listed Home Assistant integrations.
+    Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
 
 </div>

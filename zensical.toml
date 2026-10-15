@@ -12,6 +12,7 @@ nav = [
   { "Home" = "index.md" },
   { "Home Automation" = "home-automation.md" },
   { "Sailing" = "sailing.md" },
+  { "Organization" = "organization.md" },
 ]
 
 extra_css = ["stylesheets/extra.css"]
@@ -54,7 +55,7 @@ link = "https://github.com/rhizomatics"
 [project.plugins.llmstxt]
 full_output = "llms-full.txt"
 markdown_description = """
-Rhizomatics is an open source organisation publishing free, source-available tools that
+Rhizomatics is an open source organization publishing free, source-available tools that
 integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
 projects are hosted on GitHub at https://github.com/rhizomatics.
 """
@@ -65,3 +66,4 @@ projects are hosted on GitHub at https://github.com/rhizomatics.
   { "home-automation.md" = "Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger" },
   { "sailing.md" = "SignalK plugins and tools, and the Boat Tech Directory of marine hardware, software and resources" },
 ]
+"Organization" = [{ "organization.md" = "Rhizomatics HQ (processes, policies and standards), and HACS and npm download statistics" }]
