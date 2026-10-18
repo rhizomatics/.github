@@ -6,13 +6,30 @@ Rhizomatics is an open source organization publishing free, source-available too
 integrate with Home Assistant, MQTT brokers, Docker, and the SignalK marine data standard. All
 projects are hosted on GitHub at https://github.com/rhizomatics.
 
+Each project with a documentation site publishes its own llms.txt and llms-full.txt. Start there
+for installation, configuration and troubleshooting of a specific project:
+
+- [Supernotify](https://supernotify.rhizomatics.org.uk/llms.txt): unified Home Assistant notifications, routed by transport, recipient and scenario
+- [AutoArm](https://autoarm.rhizomatics.org.uk/llms.txt): automatic Home Assistant alarm panel arming from presence, sun and calendars
+- [Remote Logger](https://remote-logger.rhizomatics.org.uk/llms.txt): Home Assistant logs and events to Syslog or OpenTelemetry
+- [Appliance AutoNotify](https://appliance-autonotify.rhizomatics.org.uk/llms.txt): appliance cycle notifications and Live Activities for Home Assistant
+- [Home Assistant REPL](https://homeassistant-repl.rhizomatics.org.uk/llms.txt): Python shell against a running Home Assistant, for custom component developers
+- [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk/llms.txt): Docker image and Git build update checks over MQTT
+- [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk/llms.txt): ANPR/ALPR camera events to MQTT for Home Assistant
+- [signalk-cli](https://signalk-cli.rhizomatics.org.uk/llms.txt): command line and Python client for SignalK History and Streaming APIs
+- [signalk-einklabel-plugin](https://signalk-einklabel.rhizomatics.org.uk/llms.txt): SignalK data on eInk electronic shelf labels
+- [signalk-datalab-plugin](https://signalk-datalab.rhizomatics.org.uk/llms.txt): marimo data analysis notebooks for SignalK, in the browser
+- [Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk/llms.txt): directory of boat software, hardware and data standards
+
+SignalK plugins without a documentation site are documented in their GitHub README.
+
 ## Overview
 
 - [Home](<https://www.rhizomatics.org.uk/index.md>): Introduction to Rhizomatics and its projects
 
 ## Projects
 
-- [Home Automation](<https://www.rhizomatics.org.uk/home-automation/index.md>): Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger
+- [Home Automation](<https://www.rhizomatics.org.uk/home-automation/index.md>): Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger, Appliance AutoNotify, Home Assistant REPL
 - [Sailing](<https://www.rhizomatics.org.uk/sailing/index.md>): SignalK plugins and tools, and the Boat Tech Directory of marine hardware, software and resources
 
 ## Organization
