@@ -56,8 +56,8 @@ the wider Home Assistant, Python and Docker ecosystems.
     ---
 
     Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
-    
--   :material-bluetooth-connected: **[pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy)**
+
+-   :material-bluetooth-transfer: **[pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy)**
 
     ---
 
