@@ -89,4 +89,12 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
     Tiny Bluetooth LE proxy to run on ESP32 devices attached to a small Linux device like a router and act as
     a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too. 
 
+-   :material-navigation-variant-outline: **[pico-ais-reporter](https://github.com/rhizomatics/pico-ais-reporter)**
+
+    ---
+
+    Tiny AIS reporter that can run entirely on a GPS enabled cellular router, for example Teltonika, and
+    report boat position to AISHub or other aggregators without needing NMEA network and instruments, or SignalK.
+
 </div>
+
