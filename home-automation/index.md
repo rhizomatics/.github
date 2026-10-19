@@ -37,3 +37,8 @@ Open source tools for [Home Assistant](<https://www.home-assistant.io/>), MQTT, 
   ---
 
   Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+- :material-bluetooth-connected: **[pico-ble-proxy](<https://github.com/rhizomatics/pico-ble-proxy>)**
+
+  ---
+
+  Tiny Bluetooth LE proxy to run on ESP32 devices attached to a small Linux device like a router and act as a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too.
