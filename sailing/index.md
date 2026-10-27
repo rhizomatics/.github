@@ -43,7 +43,7 @@ Rhizomatics builds open source tools for [SignalK](<https://signalk.org/>), the 
   ---
 
   Notifications API implementation for text messaging. Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS), with throttling and retry.
-- :material-bluetooth-connected: **[signalk-ble-sensors-plugin](<https://github.com/rhizomatics/signalk-ble-sensors-plugin>)**
+- **[signalk-ble-sensors-plugin](<https://github.com/rhizomatics/signalk-ble-sensors-plugin>)**
 
   ---
 
