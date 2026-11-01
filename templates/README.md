@@ -24,6 +24,13 @@ scripts/sync-admin.sh           # copy callers in, remove the per-repo workflows
 
 Then commit in each repo.
 
+## Python dependency refresh
+
+`templates/python/refresh-deps.sh` is copied by `sync-admin.sh` into every repo with a `uv.lock`.
+It pulls bot PRs, upgrades mise tools, re-locks and syncs with `uv`, and runs `pre-commit autoupdate`.
+It hides the user-level `~/.config/uv/uv.toml` from `uv` (`XDG_CONFIG_HOME=/dev/null`) so personal
+settings never reach a committed `uv.lock`, while the project's own `[tool.uv]` still applies.
+
 ## Dependabot
 
 `dependabot.yml` can't be shared, so each repo has its own with a common shape per ecosystem:

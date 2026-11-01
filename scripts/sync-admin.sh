@@ -36,6 +36,15 @@ while IFS= read -r gitdir; do
     changes+=("update $(basename "$tpl")")
     $check || { mkdir -p "$(dirname "$dest")"; cp "$tpl" "$dest"; }
   done
+  # uv-managed Python repos also share refresh-deps.sh
+  if [[ -f $repo/uv.lock ]]; then
+    for tpl in "$here"/templates/python/*; do
+      dest=$repo/$(basename "$tpl")
+      cmp -s "$tpl" "$dest" && continue
+      changes+=("update $(basename "$tpl")")
+      $check || cp "$tpl" "$dest"
+    done
+  fi
   # The .github repo holds the shared labels.yml at its root, so .github/labels.yml is still legacy there.
   for f in "${legacy[@]}"; do
     [[ -e $repo/$f ]] || continue
