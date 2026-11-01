@@ -22,8 +22,8 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
     * OTEL and Syslog native remote structured logging for Home Assistant
     * Available via public [HACS](https://hacs.xyz) catalog.
 * [Home Assistant REPL](https://homeassistant-repl.rhizomatics.org.uk)
-    * Python REPL based developer shell for Home Assistant, access entities directly as Python objects, with otpional server component for direct access to live Python objects
-      
+    * Python REPL based developer shell for Home Assistant, access entities directly as Python objects, with optional server component for direct access to live Python objects
+
 #### Boats and SignalK
 
 * [SignalK CLI](https://github.com/rhizomatics/signalk-cli)
@@ -39,18 +39,18 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 * [signalk-datalab-plugin](https://github.com/rhizomatics/signalk-datalab-plugin)
   * Python data notebooks using Marimo and WASM for easy (and advanced ) data analysis on SignalK data
   * Example notebooks that pulls aggregate data out of the SignalK History API using different approaches (polars, ibis, signalk_cli) and live data streaming
- 
+
 * [signalk-bluetti-plugin](https://github.com/rhizomatics/signalk-bluetti-plugin)
   * Read Bluetti power station sensor data for battery level, solar input, inverter etc
   * Configuration for dozens of models
   * Some newer models using encrypted data will need a vendor-supplied key
- 
+
 * [signalk-delta-squelch-plugin](https://github.com/rhizomatics/signalk-delta-squelch-plugin)
   * Minimize noisy SignalK deltas and unnecessary database space/query time for analytics
   * Apply configurable rounding factor where SignalK precision exceeds the device resolution, e.g. GPS position
   * Skip updates within a configurable tolerance from last value, with heartbeat to maintain minimal stream
   * Reject implausible position changes from GPS spikes
- 
+
 * [signalk-einklabel-plugin](https://github.com/rhizomatics/signalk-einklabel-plugin)
   * Publish SignalK data to cheap eInk electronic shelf labels over BLE
   * Simple SVG templating, access to data paths plus Resources API
@@ -61,5 +61,4 @@ Current usable projects, focused on Home Assistant, MQTT, SignalK and self-hosti
 * [signalk-teltonika-sms-plugin](https://github.com/rhizomatics/signalk-teltonika-sms-plugin)
   * Notifications API implementation for text messaging
   * Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS)
-  * Throttling and retry 
-  
+  * Throttling and retry

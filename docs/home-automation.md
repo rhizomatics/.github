@@ -62,5 +62,5 @@ the wider Home Assistant, Python and Docker ecosystems.
     ---
 
     Tiny Bluetooth LE proxy to run on ESP32 devices attached to a small Linux device like a router and act as
-    a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too. 
+    a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too.
 </div>

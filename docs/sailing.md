@@ -81,7 +81,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
     ---
 
     Notifications API implementation for text messaging. Sends SMS via the Web API on modern Teltonika RutOS modems/routers (minimum v7.6 of RutOS), with throttling and retry.
-    
+
 -   :material-bluetooth-connect: **[signalk-ble-sensors-plugin](https://github.com/rhizomatics/signalk-ble-sensors-plugin)**
 
     ---
@@ -92,7 +92,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
     ---
 
     Tiny Bluetooth LE proxy to run on ESP32 devices attached to a small Linux device like a router and act as
-    a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too. 
+    a Home Assistant remote bluetooth adaptor. Designed for monitoring boats, will work on land too.
 
 -   :material-navigation-variant-outline: **[pico-ais-reporter](https://github.com/rhizomatics/pico-ais-reporter)**
 
@@ -102,4 +102,3 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
     report boat position to AISHub or other aggregators without needing NMEA network and instruments, or SignalK.
 
 </div>
-
