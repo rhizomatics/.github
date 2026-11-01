@@ -1,3 +1,5 @@
+![Rhizomatics](<https://www.rhizomatics.org.uk/assets/images/rhizomatics-logo.png>)
+
 # Rhizomatics
 
 Open source software for automating homes and boats, focusing on Home Assistant, MQTT and SignalK.
