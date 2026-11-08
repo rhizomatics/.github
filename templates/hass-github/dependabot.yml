@@ -1,4 +1,4 @@
-# Dependency updates. Shape shared across rhizomatics repos: see templates/README.md in rhizomatics/.github.
+# Dependency updates. Shape shared across rhizomatics repos: see policies/project_standards.md in rhizomatics/hq.
 # Version updates run on the 1st and 15th; security updates are raised as soon as an alert opens.
 version: 2
 updates:

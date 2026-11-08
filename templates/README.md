@@ -7,7 +7,7 @@ Shared GitHub admin automation for rhizomatics repos.
 | `admin-auto-assign.yml` | `reusable-auto-assign.yml` | Assigns new/reopened issues and PRs (including fork PRs) to `jeyrb` |
 | `admin-labels.yml` | `reusable-labels.yml` | Weekly sync of [`/labels.yml`](../labels.yml) into the repo; repo-only labels are kept |
 | `admin-dependency-review.yml` | `reusable-dependency-review.yml` | Flags known-vulnerable dependencies on PRs, commenting only when it fails |
-| `admin-dependabot-automerge.yml` | `reusable-dependabot-automerge.yml` | Squash-merges Dependabot PRs touching only trusted deps (`TRUSTED` regex: astral's uv, ruff, ty, `astral-sh/*` actions) once every other check passes |
+| `admin-dependabot-automerge.yml` | `reusable-dependabot-automerge.yml` | Squash-merges Dependabot PRs touching only trusted deps (`TRUSTED` regex) once every other check passes |
 
 Callers pin the reusable workflows to a release tag's commit SHA (`@<sha> # 1.0.0`), so a
 change to a reusable workflow reaches a repo only when its pin moves. To release one, tag this
@@ -43,34 +43,13 @@ A file task shadows a `mise.toml` task of the same name, so a repo that needs it
 (supernotify's `clean` also tears down its Docker preview) defines it in `mise.toml`, and
 `sync-admin.sh` then leaves the shared one out.
 
-## Cooldowns
+## Standards
 
-Every automatic update waits 7 days after a release (`policies/project_standards.md` in
-`rhizomatics/hq`), so a compromised or broken release has time to be pulled first:
+The rules these templates implement (cooldowns, the Dependabot shape, dependency floors, `prek`
+over `pre-commit`) are kept in
+[`policies/project_standards.md`](https://github.com/rhizomatics/hq/blob/main/policies/project_standards.md)
+in `rhizomatics/hq`. This file only covers how the shared files work.
 
-| Updater | Where the cooldown lives |
-|---|---|
-| Dependabot | `cooldown: default-days: 7` on each ecosystem |
-| uv | `exclude-newer = "7 days"` in `[tool.uv]`; per-package exceptions in `exclude-newer-package` |
-| npm | shared `.npmrc` (`min-release-age=7`) |
-| prek hooks | `prek autoupdate --cooldown-days 7` in the shared `refresh` task |
-
-Own packages may go to 0 days, and trusted, widely used ones (Home Assistant, astral) to 2.
-Repos use `prek` (from `mise.toml`) rather than `pre-commit`; it reads the same
-`.pre-commit-config.yaml`.
-
-## Dependabot
-
-`dependabot.yml` can't be shared, so each repo has its own with a common shape per ecosystem:
-
-- **Version updates** on the 1st and 15th of the month (Dependabot has no fortnightly interval),
-  7-day cooldown. Minor+patch bumps are grouped into one PR per ecosystem; majors come separately.
-- **astral** group (uv, ruff, ty, `astral-sh/*` actions) in Python and Actions ecosystems, so trusted
-  updates arrive in their own PR and can be auto-merged. Keep it in step with `TRUSTED`.
-- **Security updates** are raised as soon as an alert opens, grouped into one PR per ecosystem.
-- **Minimum versions stay put**: pip, uv and npm entries set `versioning-strategy:
-  increase-if-necessary`, so Dependabot updates the lock file and only raises a lower bound when
-  a new release falls outside the declared range. Floors are a support decision: 6 months of Home
-  Assistant for integrations, Python 3.13-3.15 for PyPI packages.
-- The Home Assistant integrations only update direct pip deps, since their transitive deps are
-  pinned by homeassistant. The same `allow` rule keeps security PRs to direct deps too.
+`dependabot.yml` can't be shared, so each repo keeps its own (the Home Assistant starting point is
+`templates/hass-github/dependabot.yml`). When you change one, keep its `astral` group in step with
+`TRUSTED` in `reusable-dependabot-automerge.yml`.
