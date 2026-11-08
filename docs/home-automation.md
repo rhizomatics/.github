@@ -1,6 +1,21 @@
 ---
 title: Home Automation
 description: Open source software for Home Assistant, MQTT and Docker self-hosting.
+tags:
+  - notifications
+  - alarms
+  - homeassistant
+  - home-assistant
+  - home-automation
+  - otel
+  - syslog
+  - log-aggregation
+  - picoware
+  - mqtt
+  - anpr
+  - alpr
+  - cctv
+  - frigate
 ---
 
 # Home Automation
@@ -56,6 +71,12 @@ the wider Home Assistant, Python and Docker ecosystems.
     ---
 
     Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+
+-   :material-cctv: **[Camera AutoNotify](https://camera-autonotify.rhizomatics.org.uk)**
+
+    ---
+
+    Instant set up notifications for security cameras, including Frigate events and GenAI intepretations, using Supernotify and Home Assistant
 
 -   :material-bluetooth-transfer: **[pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy)**
 

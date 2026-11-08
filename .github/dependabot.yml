@@ -20,17 +20,21 @@ updates:
         applies-to: security-updates
         patterns: ["*"]
 
-  - package-ecosystem: pip
+  - package-ecosystem: uv
     directory: /
+    versioning-strategy: increase-if-necessary
     schedule:
       interval: cron
       cronjob: "0 6 1,15 * *"
     cooldown:
       default-days: 7
     groups:
-      pip:
+      # Trusted: auto-merged by admin-dependabot-automerge.yml once checks pass.
+      astral:
+        patterns: ["uv", "ruff", "ty"]
+      uv:
         patterns: ["*"]
         update-types: [minor, patch]
-      pip-security:
+      uv-security:
         applies-to: security-updates
         patterns: ["*"]

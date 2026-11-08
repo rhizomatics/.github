@@ -24,12 +24,23 @@ scripts/sync-admin.sh           # copy callers in, remove the per-repo workflows
 
 Then commit in each repo.
 
-## Python dependency refresh
+## Shared mise tasks
 
-`templates/python/refresh-deps.sh` is copied by `sync-admin.sh` into every repo with a `uv.lock`.
-It pulls bot PRs, upgrades mise tools, re-locks and syncs with `uv`, and runs `pre-commit autoupdate`.
-It hides the user-level `~/.config/uv/uv.toml` from `uv` (`XDG_CONFIG_HOME=/dev/null`) so personal
-settings never reach a committed `uv.lock`, while the project's own `[tool.uv]` still applies.
+`sync-admin.sh` copies [mise file tasks](https://mise.jdx.dev/tasks/file-tasks.html) into each
+repo's `.mise/tasks/`, replacing the old `refresh-deps.sh` (which it removes):
+
+| Repos | Task | What it does |
+|---|---|---|
+| Python (`uv.lock`) | `mise run refresh` | Upgrades mise tools, pulls bot PRs, re-locks and syncs with `uv`, runs `pre-commit autoupdate` |
+| Python (`uv.lock`) | `mise run clean` | Removes build, test and lint caches and recreates an empty `.venv` |
+| Node (`package-lock.json`) | `mise run refresh` | Pulls bot PRs, runs `pre-commit autoupdate`, upgrades mise tools, runs `npm update` |
+
+The Python `refresh` hides the user-level `~/.config/uv/uv.toml` from `uv` (`XDG_CONFIG_HOME=/dev/null`)
+so personal settings never reach a committed `uv.lock`, while the project's own `[tool.uv]` still applies.
+
+A file task shadows a `mise.toml` task of the same name, so a repo that needs its own version
+(supernotify's `clean` also tears down its Docker preview) defines it in `mise.toml`, and
+`sync-admin.sh` then leaves the shared one out.
 
 ## Dependabot
 

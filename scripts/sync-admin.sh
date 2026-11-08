@@ -21,11 +21,14 @@ legacy=(
   .github/workflows/labeller.yml
   .github/workflows/dependency-review.yml
   .github/labels.yml
+  refresh-deps.sh
 )
 
 stale=0
 while IFS= read -r gitdir; do
   repo=$(dirname "$gitdir")
+  # Forks, retired and throwaway checkouts are not maintained repos
+  [[ /${repo#"$root"/}/ =~ /(clones|archive|experiments)/ ]] && continue
   url=$(git -C "$repo" remote get-url origin 2>/dev/null || true)
   [[ $url =~ github\.com[:/]rhizomatics/ ]] || continue
 
@@ -36,13 +39,21 @@ while IFS= read -r gitdir; do
     changes+=("update $(basename "$tpl")")
     $check || { mkdir -p "$(dirname "$dest")"; cp "$tpl" "$dest"; }
   done
-  # uv-managed Python repos also share refresh-deps.sh
-  if [[ -f $repo/uv.lock ]]; then
-    for tpl in "$here"/templates/python/*; do
-      dest=$repo/$(basename "$tpl")
+  # Shared mise file tasks: uv-managed Python repos get templates/python/tasks, npm repos
+  # templates/node/tasks. A task the repo defines in its own mise.toml is left out, since
+  # the file task would otherwise shadow it.
+  eco=
+  if [[ -f $repo/uv.lock ]]; then eco=python
+  elif [[ -f $repo/package-lock.json ]]; then eco=node
+  fi
+  if [[ -n $eco ]]; then
+    for tpl in "$here"/templates/$eco/tasks/*; do
+      name=$(basename "$tpl")
+      dest=$repo/.mise/tasks/$name
+      grep -qE "^\[tasks\.\"?$name\"?\]" "$repo/mise.toml" 2>/dev/null && continue
       cmp -s "$tpl" "$dest" && continue
-      changes+=("update $(basename "$tpl")")
-      $check || cp "$tpl" "$dest"
+      changes+=("update .mise/tasks/$name")
+      $check || { mkdir -p "$(dirname "$dest")"; cp "$tpl" "$dest"; }
     done
   fi
   # The .github repo holds the shared labels.yml at its root, so .github/labels.yml is still legacy there.
@@ -56,6 +67,8 @@ while IFS= read -r gitdir; do
     stale=1
     echo "${repo#"$root"/}:"
     printf '  %s\n' "${changes[@]}"
+  else
+    echo "${repo#"$root"/}: up to date"
   fi
 done < <(find "$root" -maxdepth 4 -name .git -type d -prune | sort)
 

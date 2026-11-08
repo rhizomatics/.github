@@ -1,0 +1,13 @@
+[project]
+name = "rhizomatics-home"
+version = "0"
+description = "rhizomatics.org.uk site and shared GitHub admin automation"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+docs = ["zensical>=0.0.72"]
+
+[tool.uv]
+package = false
+default-groups = ["docs"]
