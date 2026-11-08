@@ -37,6 +37,11 @@ Open source tools for [Home Assistant](<https://www.home-assistant.io/>), MQTT, 
   ---
 
   Instant set up live activity notifications for household appliances, using Supernotify and Home Assistant
+- **[Camera AutoNotify](<https://camera-autonotify.rhizomatics.org.uk>)**
+
+  ---
+
+  Instant set up notifications for security cameras, including Frigate events and GenAI intepretations, using Supernotify and Home Assistant
 - **[pico-ble-proxy](<https://github.com/rhizomatics/pico-ble-proxy>)**
 
   ---
