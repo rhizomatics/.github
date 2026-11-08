@@ -11,3 +11,5 @@ docs = ["zensical>=0.0.72"]
 [tool.uv]
 package = false
 default-groups = ["docs"]
+# 7-day release cooldown (policies/project_standards.md in rhizomatics/hq)
+exclude-newer = "7 days"

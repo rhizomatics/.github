@@ -56,6 +56,11 @@ while IFS= read -r gitdir; do
       $check || { mkdir -p "$(dirname "$dest")"; cp "$tpl" "$dest"; }
     done
   fi
+  # npm repos share one .npmrc, which holds the release cooldown for npm install/update.
+  if [[ $eco == node ]] && ! cmp -s "$here/templates/node/npmrc" "$repo/.npmrc"; then
+    changes+=("update .npmrc")
+    $check || cp "$here/templates/node/npmrc" "$repo/.npmrc"
+  fi
   # The .github repo holds the shared labels.yml at its root, so .github/labels.yml is still legacy there.
   for f in "${legacy[@]}"; do
     [[ -e $repo/$f ]] || continue

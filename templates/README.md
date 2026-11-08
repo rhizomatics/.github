@@ -31,9 +31,10 @@ repo's `.mise/tasks/`, replacing the old `refresh-deps.sh` (which it removes):
 
 | Repos | Task | What it does |
 |---|---|---|
-| Python (`uv.lock`) | `mise run refresh` | Upgrades mise tools, pulls bot PRs, re-locks and syncs with `uv`, runs `pre-commit autoupdate` |
+| Python (`uv.lock`) | `mise run refresh` | Upgrades mise tools, pulls bot PRs, re-locks and syncs with `uv`, runs `prek autoupdate --cooldown-days 7` |
 | Python (`uv.lock`) | `mise run clean` | Removes build, test and lint caches and recreates an empty `.venv` |
-| Node (`package-lock.json`) | `mise run refresh` | Pulls bot PRs, runs `pre-commit autoupdate`, upgrades mise tools, runs `npm update` |
+| Node (`package-lock.json`) | `mise run refresh` | Pulls bot PRs, runs `prek autoupdate --cooldown-days 7`, upgrades mise tools, runs `npm update` |
+| Node (`package-lock.json`) | `.npmrc` (not a task) | `min-release-age=7`, so `npm install`/`npm update` skip versions under 7 days old; `@rhizomatics/*` is exempt |
 
 The Python `refresh` hides the user-level `~/.config/uv/uv.toml` from `uv` (`XDG_CONFIG_HOME=/dev/null`)
 so personal settings never reach a committed `uv.lock`, while the project's own `[tool.uv]` still applies.
@@ -41,6 +42,22 @@ so personal settings never reach a committed `uv.lock`, while the project's own 
 A file task shadows a `mise.toml` task of the same name, so a repo that needs its own version
 (supernotify's `clean` also tears down its Docker preview) defines it in `mise.toml`, and
 `sync-admin.sh` then leaves the shared one out.
+
+## Cooldowns
+
+Every automatic update waits 7 days after a release (`policies/project_standards.md` in
+`rhizomatics/hq`), so a compromised or broken release has time to be pulled first:
+
+| Updater | Where the cooldown lives |
+|---|---|
+| Dependabot | `cooldown: default-days: 7` on each ecosystem |
+| uv | `exclude-newer = "7 days"` in `[tool.uv]`; per-package exceptions in `exclude-newer-package` |
+| npm | shared `.npmrc` (`min-release-age=7`) |
+| prek hooks | `prek autoupdate --cooldown-days 7` in the shared `refresh` task |
+
+Own packages may go to 0 days, and trusted, widely used ones (Home Assistant, astral) to 2.
+Repos use `prek` (from `mise.toml`) rather than `pre-commit`; it reads the same
+`.pre-commit-config.yaml`.
 
 ## Dependabot
 
