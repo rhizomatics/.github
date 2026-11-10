@@ -4,6 +4,10 @@
 # workflows and label files they replace. Only touches working trees; review and commit
 # in each repo afterwards.
 #
+# A repo can opt out of templates with .github/admin-skip: one template file name per line
+# (# comments allowed), e.g. admin-dependency-review.yml in a private repo without GitHub
+# Advanced Security. Skipped templates are removed from the repo if present.
+#
 #   scripts/sync-admin.sh [--check] [root]
 #
 # --check reports repos that are out of date and exits non-zero, changing nothing.
@@ -33,8 +37,16 @@ while IFS= read -r gitdir; do
   [[ $url =~ github\.com[:/]rhizomatics/ ]] || continue
 
   changes=()
+  skip=()
+  [[ -f $repo/.github/admin-skip ]] && mapfile -t skip < <(sed -e 's/#.*//' -e 's/[[:space:]]//g' -e '/^$/d' "$repo/.github/admin-skip")
   for tpl in "$here"/templates/workflows/*.yml; do
     dest=$repo/.github/workflows/$(basename "$tpl")
+    if [[ " ${skip[*]} " == *" $(basename "$tpl") "* ]]; then
+      [[ -e $dest ]] || continue
+      changes+=("remove $(basename "$tpl") (admin-skip)")
+      $check || rm "$dest"
+      continue
+    fi
     cmp -s "$tpl" "$dest" && continue
     changes+=("update $(basename "$tpl")")
     $check || { mkdir -p "$(dirname "$dest")"; cp "$tpl" "$dest"; }

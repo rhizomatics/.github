@@ -24,6 +24,11 @@ scripts/sync-admin.sh           # copy callers in, remove the per-repo workflows
 
 Then commit in each repo.
 
+A repo that shouldn't get a template lists its file name in `.github/admin-skip`, one per line (`#`
+comments allowed); `sync-admin.sh` then leaves it out and removes it if present. Example: hq-private
+skips `admin-dependency-review.yml` (a private repo without GitHub Advanced Security can't run it)
+and `admin-dependabot-automerge.yml` (no Dependabot there).
+
 ## Shared mise tasks
 
 `sync-admin.sh` copies [mise file tasks](https://mise.jdx.dev/tasks/file-tasks.html) into each
