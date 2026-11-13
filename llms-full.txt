@@ -41,7 +41,7 @@ Open source software for automating homes and boats, focusing on Home Assistant,
   ---
 
   Open source tools for SignalK, and a curated directory of boat technology.
-- **[Organization](<https://www.rhizomatics.org.uk/organization/index.md>)**
+- **[Organization](<https://hq.rhizomatics.org.uk>)**
 
   ---
 
@@ -163,23 +163,3 @@ Rhizomatics builds open source tools for [SignalK](<https://signalk.org/>), the 
   Tiny AIS reporter that can run entirely on a GPS enabled cellular router, for example Teltonika, and report boat position to AISHub or other aggregators without needing NMEA network and instruments, or SignalK.
 
 # Organization
-
-# Organization
-
-How Rhizomatics runs its open source projects, and how widely they are used.
-
-- **[Rhizomatics HQ](<https://github.com/rhizomatics/hq>)**
-
-  ---
-
-  Headquarters for the Rhizomatics open source projects: processes, agent skills, policies and standards.
-- **[HACS Dashboard](<https://rhizomatics.github.io/hacs-downloads/>)**
-
-  ---
-
-  Download metrics and analytics for our HACS-listed Home Assistant integrations.
-- **[NPM Dashboard](<https://www.packfolio.dev/?q=%40rhizomatics>)**
-
-  ---
-
-  Download metrics and analytics for our npm-listed SignalK integrations.

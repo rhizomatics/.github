@@ -33,5 +33,3 @@ SignalK plugins without a documentation site are documented in their GitHub READ
 - [Sailing](<https://www.rhizomatics.org.uk/sailing/index.md>): SignalK plugins and tools, and the Boat Tech Directory of marine hardware, software and resources
 
 ## Organization
-
-- [Organization](<https://www.rhizomatics.org.uk/organization/index.md>): Rhizomatics HQ (processes, policies and standards), and HACS and npm download statistics

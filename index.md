@@ -14,7 +14,7 @@ Open source software for automating homes and boats, focusing on Home Assistant,
   ---
 
   Open source tools for SignalK, and a curated directory of boat technology.
-- **[Organization](<https://www.rhizomatics.org.uk/organization/index.md>)**
+- **[Organization](<https://hq.rhizomatics.org.uk>)**
 
   ---
 
