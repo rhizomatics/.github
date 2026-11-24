@@ -54,11 +54,11 @@ the wider Home Assistant, Python and Docker ecosystems.
     Integrate ANPR/ALPR cameras via the file system, creating Home Assistant entities for plate
     reads, with optional UK DVLA lookup.
 
--   :material-text-box-multiple-outline: **[Remote Logger](http://remote-logger.rhizomatics.org.uk)**
+-   :material-text-box-multiple-outline: **[Remote Logger](https://remote-logger.rhizomatics.org.uk)**
 
     ---
 
-    OTEL and syslog native remote structured logging for Home Assistant.
+    Structured logging from Home Assistant to an OpenTelemetry (OTLP) or Syslog collector, set up in the UI.
 
 -   :material-access-point: **[Home Assistant REPL](https://homeassistant-repl.rhizomatics.org.uk)**
 
@@ -76,7 +76,7 @@ the wider Home Assistant, Python and Docker ecosystems.
 
     ---
 
-    Instant set up notifications for security cameras, including Frigate events and GenAI intepretations, using Supernotify and Home Assistant
+    Instant set up notifications for security cameras, including Frigate events and GenAI interpretations, using Supernotify and Home Assistant
 
 -   :material-bluetooth-transfer: **[pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy)**
 
