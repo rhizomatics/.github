@@ -47,7 +47,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     ---
 
-    Interactive data analysis notebooks for SignalK, using [Marimo](https://marimo.io) running as WebAssembly in the browser. API and streaming access using a choice of Polars, Ibis Framework, DuckDB and signalk-cli,
+    Interactive data analysis notebooks for SignalK, using [Marimo](https://marimo.io) running as WebAssembly in the browser. API and streaming access using a choice of Polars, Ibis Framework, DuckDB and signalk-cli.
 
 -   :material-compass-outline: **[Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk/)**
 
@@ -55,13 +55,13 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     A curated list of boat tech: NMEA and Seatalk, marine internet, open source projects, hardware vendors and educational resources.
 
-    Also available as in 'awesome list' format as [awesome-boat-tech](https://github.com/SY-Sea-Jade/awesome-boat-tech)) and as a webapp plugin for SignalK
+    Also available in 'awesome list' format as [awesome-boat-tech](https://github.com/SY-Sea-Jade/awesome-boat-tech), and as a webapp plugin for SignalK.
 
 -   :material-battery-charging-high: **[signalk-bluetti-plugin](https://github.com/rhizomatics/signalk-bluetti-plugin)**
 
     ---
 
-    Reads Bluetti power station sensor data for battery level, solar input, inverter and more, with configuration for dozens of models. Some newer models using encrypted data will need a vendor-supplied key.
+    Reads Bluetti power station sensor data for battery level, solar input, inverter and more, with configuration for over 20 models, including the encrypted V2 models (EL30V2, EL100V2, PR30V2, PR100V2), which need no key. Some older models that scramble their data need a key file from Bluetti support.
 
 -   :material-filter-variant: **[signalk-delta-squelch-plugin](https://github.com/rhizomatics/signalk-delta-squelch-plugin)**
 
@@ -73,7 +73,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 
     ---
 
-    Publishes SignalK data to cheap eInk electronic shelf labels over BLE, with simple SVG templating, access to data paths plus the Resources API, and scheduling based on time or change to a SignalK path. Handles ZhunyCo BLE labels and is extensible for other vendors.
+    Publishes SignalK data to cheap eInk electronic shelf labels over BLE, with simple SVG templating, access to data paths plus the Resources API, and scheduling based on time or change to a SignalK path. Handles Zhsunyco and Gicisky BLE labels and is extensible for other vendors.
 
     Also available as [signalk-einklabel-genai-plugin](https://github.com/rhizomatics/signalk-einklabel-genai-plugin) to generate ESL labels from a configurable LLM prompt.
 
@@ -86,6 +86,7 @@ Rhizomatics builds open source tools for [SignalK](https://signalk.org/), the op
 -   :material-bluetooth-connect: **[signalk-ble-sensors-plugin](https://github.com/rhizomatics/signalk-ble-sensors-plugin)**
 
     ---
+
     Passive BLE sensor integration for the SignalK BLE Manager, for example for RuuviTag or Switchbot thermometers.
 
 -   :material-bluetooth-transfer: **[pico-ble-proxy](https://github.com/rhizomatics/pico-ble-proxy)**

@@ -12,7 +12,7 @@ nav = [
   { "Home" = "index.md" },
   { "Home Automation" = "home-automation.md" },
   { "Sailing" = "sailing.md" },
-  { "Organization" = "organization.md" },
+  { "Organization" = "https://hq.rhizomatics.org.uk" },
 ]
 
 extra_css = ["stylesheets/extra.css"]
@@ -66,6 +66,7 @@ for installation, configuration and troubleshooting of a specific project:
 - [AutoArm](https://autoarm.rhizomatics.org.uk/llms.txt): automatic Home Assistant alarm panel arming from presence, sun and calendars
 - [Remote Logger](https://remote-logger.rhizomatics.org.uk/llms.txt): Home Assistant logs and events to Syslog or OpenTelemetry
 - [Appliance AutoNotify](https://appliance-autonotify.rhizomatics.org.uk/llms.txt): appliance cycle notifications and Live Activities for Home Assistant
+- [Camera AutoNotify](https://camera-autonotify.rhizomatics.org.uk/llms.txt): camera and Frigate event notifications through Supernotify, with no blueprint or YAML
 - [Home Assistant REPL](https://homeassistant-repl.rhizomatics.org.uk/llms.txt): Python shell against a running Home Assistant, for custom component developers
 - [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk/llms.txt): Docker image and Git build update checks over MQTT
 - [anpr2mqtt](https://anpr2mqtt.rhizomatics.org.uk/llms.txt): ANPR/ALPR camera events to MQTT for Home Assistant
@@ -75,12 +76,14 @@ for installation, configuration and troubleshooting of a specific project:
 - [Boat Tech Directory](https://boat-tech-directory.rhizomatics.org.uk/llms.txt): directory of boat software, hardware and data standards
 
 SignalK plugins without a documentation site are documented in their GitHub README.
+
+How the projects are run (processes, policies, standards) and how much they are used is on
+Rhizomatics HQ: https://hq.rhizomatics.org.uk/llms.txt
 """
 
 [project.plugins.llmstxt.sections]
 "Overview" = [{ "index.md" = "Introduction to Rhizomatics and its projects" }]
 "Projects" = [
-  { "home-automation.md" = "Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger, Appliance AutoNotify, Home Assistant REPL" },
+  { "home-automation.md" = "Home Assistant, MQTT and Docker self-hosting projects: AutoArm, Supernotify, Updates2MQTT, anpr2mqtt, Remote Logger, Appliance AutoNotify, Camera AutoNotify, Home Assistant REPL" },
   { "sailing.md" = "SignalK plugins and tools, and the Boat Tech Directory of marine hardware, software and resources" },
 ]
-"Organization" = [{ "organization.md" = "Rhizomatics HQ (processes, policies and standards), and HACS and npm download statistics" }]
